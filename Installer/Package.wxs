@@ -1,0 +1,13 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Package Id="com.exist.portfolioapp.installer"
+		   Name="PortfolioApp Installer"
+		   Manufacturer="EXIST Software"
+		   Version="1.0.0.0">
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+	<MediaTemplate EmbedCab="yes" />
+
+    <Feature Id="Main">
+      <ComponentGroupRef Id="ExampleComponents" />
+    </Feature>
+  </Package>
+</Wix>

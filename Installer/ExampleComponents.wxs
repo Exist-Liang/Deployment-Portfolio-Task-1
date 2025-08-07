@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
+			<Component>
+				<File Source="..\PortfolioTask1\bin\Release\PortfolioTask1.exe" />
+			</Component>
+			<Component>
+				<File Source="..\PortfolioTask1\bin\Release\myLibrary1.dll" />
+			</Component>
+			<Component>
+				<File Source="..\PortfolioTask1\bin\Release\Newtonsoft.Json.dll" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
